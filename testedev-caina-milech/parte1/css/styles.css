@@ -1,0 +1,505 @@
+/*GLOBAL*/
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*HEADER*/
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background: #141414;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.banners {
+  margin-bottom: 64px;
+}
+
+.banner-top {
+  display: flex;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.banners-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.banner-bottom {
+  display: flex;
+  width: 50%;
+  max-height: 512px;
+}
+
+.img3 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*MAIN*/
+
+.destaques {
+  margin-bottom: 95px;
+}
+
+.title-destaques {
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.48px;
+  text-transform: uppercase;
+}
+
+.arows {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 100px;
+}
+
+.arow {
+  cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.product-name {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 6px;
+}
+
+.original-price {
+  color: #bbb;
+  font-family: "Arimo";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+  margin-top: 6px;
+}
+
+.sale-price {
+  color: #000;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.youtube-section {
+  background-color: #000;
+  width: 100%;
+  opacity: 0.97;
+}
+
+.youtube {
+  background-image: url(../imgs/background.svg);
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  padding-top: 73px;
+  padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -7px;
+}
+
+.title-youtube {
+  margin-bottom: 31px;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2.24px;
+  text-transform: uppercase;
+}
+
+.img-youtube {
+  width: 45.98%;
+  cursor: pointer;
+}
+
+.colecao-section {
+  margin-bottom: 64px;
+}
+
+.colecao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 33px;
+  padding-bottom: 24px;
+  background-image: url(../imgs/background2.png);
+  background-position: center;
+}
+
+.title-colecao {
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.48px;
+  text-transform: uppercase;
+}
+
+.fale-conosco {
+  width: 52px;
+  position: fixed;
+  bottom: 70px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.bloco {
+  position: fixed;
+  height: 52px;
+  bottom: 74px;
+  right: 25px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  display: none;
+  width: 260px;
+  animation-duration: 0.7s;
+  animation-name: slide;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+@keyframes slide {
+  from {
+    padding: 0;
+    font-size: 9px;
+    color: #000;
+    width: 150px;
+  }
+
+  to {
+    color: #fff;
+    width: 260px;
+  }
+}
+
+.fixed-icon:hover .bloco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.whats {
+  width: 40px;
+}
+
+/*FOOTER*/
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  padding: 16px 100px;
+  gap: 16px;
+  border-top: 1px solid #141414;
+  border-bottom: 1px solid #141414;
+  background: #f9f9f9;
+}
+
+.title-newsletter {
+  color: #000;
+  font-family: "Arimo";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-newsletter {
+  width: max-content;
+  color: #000;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.news-input-btn {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+
+.input-news {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #000;
+  background-image: url(../imgs/envelope.png);
+  background-repeat: no-repeat;
+  background-position: center left calc(18px);
+  padding-left: 51px;
+}
+
+.input-news::-webkit-input-placeholder {
+  color: #909090;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-news::-moz-placeholder {
+  color: #909090;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-news {
+  margin-right: 20px;
+  padding: 10px 17px;
+  width: 112px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  background: #000;
+  border: none;
+}
+
+.footer-infos {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 56px;
+  padding: 0 230px 0 100px;
+}
+
+.title-links,
+.title-medias {
+  color: #000;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 92.4%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.link {
+  color: #000;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.24px;
+  text-decoration: none;
+}
+
+.medias {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 16px 100px;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.rights {
+  color: #fff;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 1024px) {
+  /*Diminuir numero de slidesToShow no carousel*/
+  .first {
+    display: none;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-infos {
+    padding: 0 100px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /*Não mostrar descrição do produto a seguir do carousel, pois ficará com pouco espaço. Apenas quando girar o carousel.*/
+  .last {
+    display: none;
+  }
+
+  .img-youtube {
+    width: 70%;
+  }
+
+  .arows {
+    margin: 0 32px;
+  }
+
+  .newsletter {
+    padding: 16px 32px;
+  }
+
+  .footer-infos {
+    padding: 0 32px;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .logo-serie {
+    width: 50%;
+  }
+
+  .footer-bottom {
+    padding: 16px 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .banners {
+    margin-bottom: 40px;
+  }
+
+  .destaques {
+    margin-bottom: 60px;
+  }
+
+  /*Mudar para apenas 2 slidesToShow no carousel*/
+  .half {
+    display: none;
+  }
+
+  .carousel {
+    padding: 0 16px;
+  }
+
+  .arows {
+    margin: 0 16px;
+  }
+
+  .img-youtube {
+    width: 80%;
+  }
+
+  .newsletter {
+    padding: 24px 16px;
+  }
+
+  .news-input-btn {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .btn-news {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-infos {
+    padding: 0 16px;
+  }
+
+  .title-links,
+  .title-medias {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .media {
+    width: 50px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+  }
+}
